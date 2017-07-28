@@ -6,8 +6,8 @@ import os
 from warnings import warn
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-path = os.path.dirname(os.path.abspath(__file__))
-mpl.rc_params_from_file(path + "/matplotlibrc")
+_path = os.path.dirname(os.path.abspath(__file__))
+mpl.rc_context(fname=_path + "/matplotlibrc")
 
 
 def change_style(society="utopia"):
@@ -28,7 +28,7 @@ def change_style(society="utopia"):
     else:
         warn("Style for society {society} not found. Using Computer Modern")
         font = ''
-    with open(path + "/preamble.txt", "r") as preamble:
+    with open(_path + "/preamble.txt", "r") as preamble:
         mpl.rcParams['text.latex.preamble'] = preamble.read().format(font=font)
 
 
