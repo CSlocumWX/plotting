@@ -17,7 +17,7 @@ Below is the most basic usage. The defaults I have set are used
 and a plot is generated.
 
 ```python
-from plotting import *
+from plotting.plotting import *
 import numpy as np
 
 t = np.arange(0.0, 1.0 + 0.01, 0.01)
@@ -36,6 +36,11 @@ plt.text(0.1, 2.4,
 plt.subplots_adjust(top=0.8)
 plt.show()
 ```
+
+**Note**: If you did not clone the code as a submodule and you just copied the `plotting.py` script,
+you will need to change the import from `from plotting.plotting import *` to `from plotting import *`.
+
+*This example is based on the one included in [Text rendering With LaTeX](https://matplotlib.org/users/usetex.html).*
 
 ### Fixing the tick labels
 When matplotlib is configured to use LaTeX, it sets the tick labels to math mode by
