@@ -56,6 +56,19 @@ However, AMS and AGU use different fonts. To change this, call `change_style`.
 * `agu` - Loads Helvetica, which is close to what AGU is now using
 * `utopia` - My personal favorite option
 
+### Points and picas and inches, oh my!
+AMS has preferred figure widths. Of course, they are in picas!
+
+| Number of columns | Width in picas |
+| ----------------- | -------------- |
+| One column        | 19             |
+| Two columns       | 33             |
+| More than two     | 39             |
+
+Use `pc2in` to convert from picas to inches for figsize in matplotlib.
+
+*There are 6 picas to 1 inch.*
+
 Setting `society` to an empty string will cause the math font to reset to Computer Modern (the LaTeX default)
 
 ## Known gotchas
