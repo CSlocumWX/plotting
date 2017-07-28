@@ -5,9 +5,19 @@ figures so that the math looks nicer and the fonts match what appears
 in the manuscript text. The titles, axis labels, and tick labels are
 kept as [DejaVu Sans typeface](https://en.wikipedia.org/wiki/DejaVu_fonts) (the current default for matplotlib 2x).
 
+## Prerequisites
+
+Taken from the [Text rendering With LaTeX](https://matplotlib.org/users/usetex.html) page:
+
+* A working LaTeX installation
+* dvipng (comes with LaTex)
+* Ghostscript 8.60 or later
+
+*Unfortunately, the error message coming from matplotlib will not help you if any of the items above are issues.*
+
 ## Getting started
 
-Add plotting as a submodule to your Git repository
+Add plotting as a submodule to your Git repository (way better than copy/paste!)
 ```
 git submodule add <url> plotting
 git submodule update --init --recursive --remote
