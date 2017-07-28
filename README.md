@@ -2,7 +2,8 @@
 
 The purpose of this repository is to change fonts in my matplotlib
 figures so that the math looks nicer and the fonts match what appears
-in the text.
+in the manuscript text. The titles, axis labels, and tick labels are
+kept as (DejaVu Sans typeface)[https://en.wikipedia.org/wiki/DejaVu_fonts] (the current default for matplotlib 2x).
 
 ## Getting started
 
